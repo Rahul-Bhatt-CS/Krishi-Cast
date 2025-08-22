@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishi Cast</title>
-    <link rel="icon" type="image/x-icon" href="logo-1.png">
+    <link rel="icon" type="image/x-icon" href="Images/logo-1.png">
 </head>
 <style>
     *{
+        scroll-behavior: smooth;
+        transition: 100ms;
         font-family: Calibri;
     }
-    ul li:hover{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    ul li a:hover{
         color: #dab200;
         cursor:pointer;
     }
@@ -35,58 +41,64 @@
         flex-direction: column;
         margin-bottom: 20px;
     }
+    #handles li{
+        margin: 7px;
+    }
+    #handles li:hover{
+        cursor: pointer;
+    }
 </style>
 <body style="margin: 0; display: flex; flex-direction: column;align-items: center; background-color: rgb(229, 229, 229);">
 
-<img src="Background.jpg" width="100%" style="position: absolute;opacity: 0.5;">
+<img src="Images/Background.jpg" width="100%" style="position: absolute;opacity: 0.5;">
 <div style="position: absolute; display: flex; flex-direction: column;align-items: center;">
     <div class="header" style="background-color: white;height: 85px;width: 95%;border-radius: 20px;margin-bottom: 20px;margin-top: 20px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-        <img src="logo-1.png" style="height: 85px;">
+        <img src="Images/logo-1.png" style="height: 85px;">
         <ul style="list-style: none; display: flex; flex-direction: row; justify-content: space-evenly; width: 400px; font-size: large; align-items: center;">
-            <li><a style="margin: 0;">Home</a></li>
-            <li><a style="margin: 0;">Services</a></li>
-            <li><a style="margin: 0;">Contact</a></li>
+            <li><a style="margin: 0;" href="#">Home</a></li>
+            <li><a style="margin: 0;" href="#toservice">Services</a></li>
+            <li><a style="margin: 0;" href="#contacts">Contact</a></li>
         </ul>
     </div>
     <div class="main_heading" style="display: flex; flex-direction: column; align-items: center; margin-top: 30px;">
         <h1 style="color: olivedrab; font-size: 80px;">Redefining Agriculture Through Media</h2>
         <h2 style="font-weight: 300; color: navy;">Watch. Learn. Grow.</h2>
-        <button style="margin-top: 10px;background-color: white; color: black; border: 2px solid #ccc; padding: 10px 30px; border-radius: 10px; cursor: pointer;">
+        <a target="_blank" href="https://www.linkedin.com/company/krishi-cast/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BevBKZvFkQMGsemnPCDz6gA%3D%3D"><button style="margin-top: 10px;background-color: white; color: black; border: 2px solid #ccc; padding: 10px 30px; border-radius: 10px; cursor: pointer;">
             Get Started!
-        </button>
+        </button></a>
 
     </div>
-    <div class="services" style="display: flex; flex-direction: column; align-items: center; margin-top: 170px; background-color: white;width: 100%;">
+    <div class="services" id="toservice" style="display: flex; flex-direction: column; align-items: center; margin-top: 170px; background-color: white;width: 100%;">
         <h1 style="color: olivedrab; font-size: 60px;">Our Services</h2>
         <h3 style="font-weight: 300; color: navy;text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, temporibus corporis cumque in libero incidunt animi ducimus aliquid optio doloribus deleniti. Eligendi rem praesentium quasi ut quod commodi. Accusamus, provident?</h3>
         <div class="service_Container" style="width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; padding: 0;">
             <div class="service">
-                <img class="image" src="logo-green.svg">
+                <img class="image" src="Images/logo-green.svg">
                 <h2 style="margin: 0; margin-top: 5px;">Service name</h2>
                 <h4 style="margin: 0; padding-top: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto culpa expedita, natus earum dolore eum nobis atque omnis iusto adipisci ad harum sunt sint veniam. Voluptas architecto dolorem eos.</h4>
             </div>
             <div class="service">
-                <img class="image" src="logo-green.svg">
+                <img class="image" src="Images/logo-green.svg">
                 <h2 style="margin: 0; margin-top: 5px;">Service name</h2>
                 <h4 style="margin: 0; padding-top: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto culpa expedita, natus earum dolore eum nobis atque omnis iusto adipisci ad harum sunt sint veniam. Voluptas architecto dolorem eos.</h4>
             </div>
             <div class="service">
-                <img class="image" src="logo-green.svg">
+                <img class="image" src="Images/logo-green.svg">
                 <h2 style="margin: 0; margin-top: 5px;">Service name</h2>
                 <h4 style="margin: 0; padding-top: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto culpa expedita, natus earum dolore eum nobis atque omnis iusto adipisci ad harum sunt sint veniam. Voluptas architecto dolorem eos.</h4>
             </div>
             <div class="service">
-                <img class="image" src="logo-green.svg">
+                <img class="image" src="Images/logo-green.svg">
                 <h2 style="margin: 0; margin-top: 5px;">Service name</h2>
                 <h4 style="margin: 0; padding-top: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto culpa expedita, natus earum dolore eum nobis atque omnis iusto adipisci ad harum sunt sint veniam. Voluptas architecto dolorem eos.</h4>
             </div>
             <div class="service">
-                <img class="image" src="logo-green.svg">
+                <img class="image" src="Images/logo-green.svg">
                 <h2 style="margin: 0; margin-top: 5px;">Service name</h2>
                 <h4 style="margin: 0; padding-top: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto culpa expedita, natus earum dolore eum nobis atque omnis iusto adipisci ad harum sunt sint veniam. Voluptas architecto dolorem eos.</h4>
             </div>
             <div class="service">
-                <img class="image" src="logo-green.svg">
+                <img class="image" src="Images/logo-green.svg">
                 <h2 style="margin: 0; margin-top: 5px;">Service name</h2>
                 <h4 style="margin: 0; padding-top: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto culpa expedita, natus earum dolore eum nobis atque omnis iusto adipisci ad harum sunt sint veniam. Voluptas architecto dolorem eos.</h4>
             </div>
@@ -97,31 +109,39 @@
         <h3 style="font-weight: 300; color: navy;text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, temporibus corporis cumque in libero incidunt animi ducimus aliquid optio doloribus deleniti. Eligendi rem praesentium quasi ut quod commodi. Accusamus, provident?</h3>
         <div class="service_Container" style="width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; padding: 0;">
             <div class="service">
-                <img class="image" src="logo-green.svg">
-                <h2 style="margin: 0; margin-top: 5px;">Benifit name</h2>
+                <img class="image" src="Images/logo-green.svg">
+                <h2 style="margin: 0; margin-top: 5px;">Benefit name</h2>
                 <h4 style="margin: 0; padding-top: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto culpa expedita, natus earum dolore eum nobis atque omnis iusto adipisci ad harum sunt sint veniam. Voluptas architecto dolorem eos.</h4>
             </div>
             <div class="service">
-                <img class="image" src="logo-green.svg">
-                <h2 style="margin: 0; margin-top: 5px;">Benifit name</h2>
+                <img class="image" src="Images/logo-green.svg">
+                <h2 style="margin: 0; margin-top: 5px;">Benefit name</h2>
                 <h4 style="margin: 0; padding-top: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto culpa expedita, natus earum dolore eum nobis atque omnis iusto adipisci ad harum sunt sint veniam. Voluptas architecto dolorem eos.</h4>
             </div>
             <div class="service">
-                <img class="image" src="logo-green.svg">
-                <h2 style="margin: 0; margin-top: 5px;">Benifit name</h2>
+                <img class="image" src="Images/logo-green.svg">
+                <h2 style="margin: 0; margin-top: 5px;">Benefit name</h2>
                 <h4 style="margin: 0; padding-top: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto culpa expedita, natus earum dolore eum nobis atque omnis iusto adipisci ad harum sunt sint veniam. Voluptas architecto dolorem eos.</h4>
             </div>
         </div>
     </div>
 
-    <div class="socials">
-
+    <div class="socials" id="contacts" style="display: flex; flex-direction: row; justify-content: space-around; align-items: center;background-color: #556b2f77; padding: 40px;">
+        <ul id="handles" style="list-style: none; align-items: center;">
+            <li><a target="_blank" href="https://www.linkedin.com/company/krishi-cast/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BevBKZvFkQMGsemnPCDz6gA%3D%3D"><img src="Images/linkedin.png" height="35px"></a></li>
+            <li><img src="Images/twitter.png" height="35px"></li>
+            <li><img src="Images/instagram.png" height="35px"></li>
+        </ul>
+        <div style="width: 50%;">
+            <h2>About</h2>
+            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, quia voluptatum quo itaque, porro unde, et vitae reprehenderit reiciendis praesentium error ea magnam perspiciatis libero. Illo libero maxime beatae perferendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet corrupti ex corporis doloremque, natus possimus nisi recusandae architecto quisquam aspernatur blanditiis quibusdam, harum debitis neque? Culpa sit id nisi odit!</h4>
+        </div>
     </div>
 
     <footer style="position: fixed;bottom: 0;background-color: #556b2f77; display: flex;flex-direction: row; justify-content: space-around; align-items: center; width: 100%; height: 35px;">
-        <h5 style="margin: 0;">Love Nature by Tyler Moore</h5>
-        <img src="logo-green.svg" height="30px">
-        <h5 style="margin: 0;">© Krishi Cast 2025 - All rights reserved</h5>    
+        <h5 style="margin: 0; width: 30%; text-align: center;;">Love Nature by Tyler Moore</h5>
+        <img src="Images/logo-green.svg" height="30px"  width="30%">
+        <h5 style="margin: 0;  width: 30% ; text-align: center;">© Krishi Cast 2025 - All rights reserved</h5>    
     </footer>
 </div>
 </body>
